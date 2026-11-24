@@ -1,9 +1,12 @@
 package ua.opnu;
 
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+
+    public static void main(String[] args) {
 
         System.out.println("=== Завдання 1 ===");
         MyOptional<String> middleName = new MyOptional<>();
@@ -32,6 +35,21 @@ public class Main {
         }
 
 
-        //System.out.println("rwfj");
+
+
+        System.out.println("\n=== Завдання 2: BookData ===");
+        BookData[] books = {
+                new BookData("Кобзар", "Тарас Шевченко", 10, 40),
+                new BookData("Лісова пісня", "Леся Українка", 5, 25),
+                new BookData("Захар Беркут", "Іван Франко", 4, 16),
+                new BookData("Тореадори з Васюківки", "Всеволод Нестайко", 2, 10)
+        };
+        Arrays.sort(books);
+        for (BookData b : books) {
+            System.out.println(b);
+        }
+
+
+
     }
 }
